@@ -1,0 +1,440 @@
+@keyframes anime1{
+    from {color: var(--ternary);}
+    to {color:var(--primary);}
+}
+@keyframes anime2{
+    from{background: var(--dark);}
+    to{background: var(--shadow);}
+}
+:root{
+    --primary:rgb(255, 148, 148);
+    --secondary:rgb(33, 33, 248);
+    --ternary:rgba(110, 245, 245, 0.972);
+    --light:rgb(72, 230, 241);
+    --shadow:#360322e1;
+    --dark:black;
+    --light_dark:slate gray;
+    --pure:rgb(233, 13, 60);
+
+
+}
+@font-face {
+    font-family:Raleway-Black ;
+    src: url(./fonts/Raleway-Black.ttf);
+}
+@font-face {
+    font-family:Raleway-BlackItalic ;
+    src: url(./fonts/Raleway-BlackItalic.ttf);
+}
+@font-face {
+    font-family:Raleway-Bold ;
+    src: url(./fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family:Raleway-semibold ;
+    src: url(./fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family:Raleway-BoldItalic ;
+    src: url(./fonts/Raleway-BoldItalic.ttf);
+}
+@font-face {
+    font-family:Raleway-ExtraBold ;
+    src: url(./fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+    font-family:Raleway-ExtraBoldItalic ;
+    src: url(./fonts/Raleway-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family:Raleway-ExtraLight ;
+    src: url(./fonts/Raleway-ExtraLight.ttf);
+}
+@font-face {
+    font-family:raleway-extralightitalic;
+    src: url(./fonts/Raleway-ExtraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: raleway-medium;
+    src: url(./fonts/Raleway-Medium.ttf);
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    margin: 0.5rem 8rem 0.3rem 3.3rem;
+    transition:all 3s ease-in-out;
+    
+}
+.container h3{
+    font-family:Raleway-boldItalic;
+    color:rgb(255, 148, 148);
+    font-size:5rem;
+    transition: all 0.3s ease-in;
+    margin-top: 0;
+    text-decoration:underline;
+}
+.container h3 span{
+    color:var(--ternary);
+}
+.container .my-img{
+    object-fit: contain;
+    width: 10.5rem;
+    height: 14.5rem;
+    
+}
+.container .content-right{
+    font-family:raleway-extralightitalic;
+    color:var(--ternary);
+    font-size:1.5rem;
+    transition: all 0.3s ease-in;
+    margin-top: 5rem;
+    text-align: center;
+    
+}
+.content-right span{
+    font-size: 1.5rem;
+    color: #ff9494;
+}
+.container p{
+    font-family:Raleway-boldItalic ;
+    color: var(--ternary);
+    margin-top: 3rem;
+    margin-right: 5rem;
+    transition:all 0.5s ease-in;
+    margin-bottom: 2.5rem;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(255, 148, 148);
+    margin:2rem;
+    padding: 1.5rem;
+    margin-left: 0.3rem;
+    margin: 4.5rem 0.5rem 5.5rem 0.8rem;
+    margin-right:15rem;
+    margin-left:20rem;
+}
+.icons .nav a{
+    margin: 2.2rem;
+    padding: 1.5rem;
+    font-family:Raleway-ExtraBoldItalic ;
+    text-decoration: none;
+    color:var(--ternary);
+}
+.icons .nav a.active{
+    color:var(--pure);
+    background:var(--ternary);
+}
+.icons .nav a:hover{
+    color:rgb(40, 4, 73);
+    background:var(--primary);
+    cursor: pointer;
+}
+body{
+    background: var(--dark);
+    height: 100%;
+    margin-left: 3.5rem;  
+}
+.bottom .intro p{
+    font-family:raleway-extralightitalic;
+    transition:all 5s ease-in-out;
+    color: var(--ternary);
+    margin:auto;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+
+}
+.intro-home p{
+    font-family:Raleway-BoldItalic;
+    transition:all 0.5s ease-in-out;
+    color: var(--ternary);
+    margin:auto;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 5rem;
+
+    
+}
+.intro-home p span{
+    color: var(--primary);
+    transition:all 1.5s ease-in-out;
+}
+.bottom .intro h1,.container-skills h1,.container-project h1{
+    font-family: Raleway-BoldItalic;
+    transition: all 5s ease-in-out;
+    color: var(--ternary);
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration:underline 2px solid var(--ternary);
+    font-size: 5rem;
+}
+.bottom .intro h1 span,.bottom .skills .container-skills span{
+    color: var(--primary);
+    transition: all 5s ease-in-out;
+}
+hr{
+    color: blanchedalmond;
+}
+.bottom .intro {
+    font-size: 3rem;
+    font-style: italic;
+    font-family:raleway-extralightitalic;
+    transition:all 5s ease-in-out;
+    color: var(--ternary);
+    margin:auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+.bottom .intro span{
+    color:var(--primary) ;
+}
+.bottom .intro p span{
+    color: rgb(255, 148, 148);
+}
+.bottom .skills h1,.container-skills h1{
+    font-family:Raleway-ExtraBoldItalic ;
+    color: var(--ternary);
+    transition: all .5s ease-in;
+    font-size: 5rem;
+    margin-left: 4.5rem;
+    padding: 5.5rem;
+    display: flex;
+    justify-content: center;
+}
+.container-skills h1{
+    padding-top: 0.1rem;
+}
+.container-interest h1{
+    margin-top: -2.5rem;
+    font-family:Raleway-ExtraBoldItalic ;
+    color: var(--ternary);
+    transition: all .5s ease-in;
+    font-size: 5rem;
+    margin-left: 4.5rem;
+    padding: 5.5rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline 2px solid var(--primary);
+    letter-spacing: 0.3rem;
+
+}.container-interest h1 span{
+    color: var(--ternary);
+}
+
+.anime-h1{
+    animation-name: anime1;
+    animation-duration: 4s;
+    animation-iteration-count:  infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.anime-body{
+    animation-name: anime2;
+    animation-duration: 8s;
+    animation-iteration-count:  infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.container-skills{
+    /* display: flex; */
+    justify-content: space-between;
+}
+.container-skills  h3,.container-skills .flex p span {
+    /* display: inline; */
+    font-family:raleway-extralightitalic;
+    transition:all 0.5s ease-in-out;
+    color: var(--ternary);
+    padding: 0.5rem;
+    /* text-align: center; */
+    font-size: 2rem;
+}
+.container-skills p  {
+    /* justify-content: center; */
+    /* display:inline-block; */
+    font-family:raleway-extralightitalic;
+    color: var(--primary);
+    padding: 0.5rem;
+    margin-top: -0.5rem;
+    margin-left:5rem;
+    
+    /* justify-content:space-evenly; */
+    font-size: 2rem;
+    text-align: center;
+}
+hr{
+    border: 1px solid var(--primary);
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+.hr1 hr{
+    border: 1px solid var(--ternary);
+    opacity: 0.8;
+    margin: 1rem 0;
+    margin-bottom: 2.5rem;
+}
+
+.container-skills .certi .btn a,.container-skills .certi .other-skills a{
+
+    border:2px solid var(--ternary) ;
+}
+.container-project .python-projects a{
+    border: 2px solid var(--primary);
+}
+.container-skills .certi  a,.container-skills .certi .other-skills a{
+    padding: 0.75rem 2.75rem;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--pure);
+    line-height: 0.8;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition:all 0.3s ease ;
+    /* border: 1px solid transparent; */
+    margin-right: 5rem;
+    margin-left: 5rem;
+    max-width: 15rem;
+    text-decoration: none;
+}
+.container-project h2{
+    margin-top: -2.3rem;
+}
+.container-project .python-projects a{
+    padding: 0.75rem 2.75rem;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--ternary);
+    line-height: 0.8;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition:all 0.3s ease ;
+    text-align: center;
+    /* border: 1px solid transparent; */
+    margin-right: 5rem;
+    margin-left: 5rem;
+    max-width: 15rem;
+    text-decoration: none; 
+}
+.margin{
+    margin-top: -5rem;
+}
+.tkinter-projects .pr1 a,.tkinter-projects .pr2 a,.python-game .pr1 a,.python-game .pr2 a,.web-project .pr1 a,.web-project .pr2 a,.web-project .pr3 a,.web-project .pr4 a{
+    padding: 0.75rem 2.75rem;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--ternary);
+    line-height: 0.8;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition:all 0.3s ease ;
+    text-align: center;
+    /* border: 1px solid transparent; */
+    margin-right: 5rem;
+    margin-left: 5rem;
+    max-width: 15rem;
+    text-decoration: none;
+    border: 2px solid var(--primary);
+    transition: all 0.5s ease-in;
+
+}
+.container-skills .certi a:hover{
+    background: var(--ternary);
+}
+.container-project .python-projects a:hover,.tkinter-projects a:hover,.web-project a:hover,.python-game a:hover{
+    background: var(--primary);
+}
+.width{
+    width: 85%;
+}
+
+.flex{
+    /* margin-top: 3.5rem; */
+    display: flex;
+    /* justify-content: space-between; */
+}.container-skills h2,.container-project h2,.tkinter-projects h2,.python-game h2,.web-project h2{
+    font-family:raleway-extralightitalic;
+    /* transition:all 10s ease-in-out; */
+    color: var(--ternary);
+    padding: 0.5rem;
+    /* text-align: center; */
+    font-size: 3rem; 
+    text-decoration: 3px solid var(--primary) underline;  
+}
+.container-project .python-projects .pr1 p{
+    font-family:raleway-extralightitalic;
+    /* transition:all 10s ease-in-out; */
+    color: var(--ternary);
+    padding: 1rem;
+    /* text-align: center; */
+    font-size: 1.5rem;
+    border: 3px solid var(--primary); 
+    width:35%;
+    margin: auto;
+    margin-bottom: 3.5rem;
+    margin-top: -6.5rem;
+}
+.tkinter-projects .pr1 p,.python-game .pr1 p,.web-project .pr1 p,.web-project .pr3 p{
+    font-family:raleway-extralightitalic;
+    /* transition:all 10s ease-in-out; */
+    color: var(--ternary);
+    padding: 1rem;
+    /* text-align: center; */
+    font-size: 1.5rem;
+    border: 3px solid var(--primary); 
+    width:35%;
+    margin: auto;
+    margin-bottom: 3.5rem;
+    margin-top: -2.5rem;
+    
+}
+.container-project .python-projects .pr2 p,.tkinter-projects .pr2 p,.python-game .pr2 p,.web-project .pr2 p,.web-project .pr4 p{
+    font-family:raleway-extralightitalic;
+    /* transition:all 10s ease-in-out; */
+    color: var(--primary);
+    padding: 1rem;
+    /* text-align: center; */
+    font-size: 1.5rem;
+    border: 3px solid var(--ternary); 
+    width:35%;
+    margin: auto;
+    margin-top: -2.5rem;
+    
+}
+.container-project .python-projects .pr3 p{
+    font-family:raleway-extralightitalic;
+    /* transition:all 10s ease-in-out; */
+    color: var(--ternary);
+    padding: 1rem;
+    /* text-align: center; */
+    font-size: 1.5rem;
+    border: 3px solid var(--primary); 
+    width:35%;
+    margin: auto;
+    margin-top: -3.5rem;
+
+}
+.container-skills .certi h2 span{
+    font-family:raleway-extralightitalic;
+    /* transition:all 10s ease-in-out; */
+    color: var(--primary);
+    padding: 0.5rem;
+    font-size: 3rem;   
+    text-decoration: 3px solid var(--ternary) underline;
+}
+body{
+    animation-name: anime2;
+    animation-duration: 6s;
+    animation-iteration-count:  infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.inline-block{
+    display: inline-block;
+}

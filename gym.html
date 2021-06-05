@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIVYA'S FITNESS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+<style>
+    body{
+        color: white;
+/* background-color: rgb(13, 13, 14); */
+/* background-image:url("https://source.unsplash.com/user/erondu/1600x900"); */
+background-image: url('img/bg.jpg');
+background-image:url(https://source.unsplash.com/1600x900/?gym,female-workout);
+background-color:black;
+font-family: 'Times New Roman', Times, serif;
+font-size: 18px;
+    }
+    .left{
+/* border: 3px solid rgb(236, 236, 221); */
+display: inline-block;
+position: absolute;A
+        left: 33px;
+        top: 33px;
+    }
+    .mid{
+/* border: 3px solid tomato; */
+display: block;
+width: 45%;
+margin: 33px auto;
+    }
+    .right{
+        position: absolute;
+        right: 33px;
+        top: 33px;
+/* border:3px solid violet; */
+display: inline-block;
+    }
+    .navbar{
+display: inline-block;
+
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+color: white;
+text-decoration: none;
+padding:9px 19px;
+font-size: 24px;
+width: 45%;
+    }
+    .navbar li a:hover,.navbar li a:active{
+        text-decoration: underline;
+        color: chartreuse;
+    }
+    .left img{
+        width: 209px;
+        margin: 4px 4px 4px 4px;
+    padding: -2px;
+    height: 85px;
+    /* filter: invert(100%); 
+    this filter is used to change the colour of black into or vice-versa*/
+    border:5px solid rgb(255, 255, 255);
+    }
+    .img{
+        text-align: center;
+    }
+    .btn{
+        margin: 0px 15px;
+        padding: 4px 13px;
+        font-family: Baloo Bhaian  2;
+        background-color: rgb(255, 255, 255);
+        color: rgb(2, 66, 31);
+        border: 2px solid #0c0c0c;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+    .btn:hover{
+        color:rgb(29, 5, 134);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .container{
+        /* border: 2px solid white; */
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        /* border-radius: 28px; */
+    }
+    .form-group input{
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width:13%;
+        margin: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            
+            <img src="E:\WEBDEVELOPMENT\gymlogo.jpg" alt="no picture found">
+            <div class="img">DIVYA'S FITNESS</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"class="active">Home</a> </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+        <button class="btn">call us</button>
+        <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>**JOIN OUR GYM**</h1>
+        <form action="noaction.php">
+    
+    <div class="form-group">
+        <input type="text" placeholder="Enter your Name">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Enter your Age">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Enter your Gender">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Enter your Locality">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Enter your Email Id">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Enter your Phone Number">
+    </div>
+    <button class="btn">Submit Here</button>
+    </form>
+    </div>
+</body>
+</html>
